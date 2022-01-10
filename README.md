@@ -16,3 +16,13 @@ MERN stack app (MongoDB, Express, React and NodeJS with Mongoose)
 - cd client && npm install && npm start, than open browser at localhost:3000
 
 - cd server && npm install && npm start
+
+### accounts for testing
+
+- regular user
+- name: paragonuser
+- password: paragonuser
+
+- admin
+- name:paragonadmin
+- password:paragonadmin
