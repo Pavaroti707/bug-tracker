@@ -1,4 +1,4 @@
-/* eslint-disable */ 
+/* eslint-disable */
 
 import React, { useState, useEffect } from "react";
 import { list } from "../services/bug-api";
@@ -47,15 +47,27 @@ export default function Dashboard() {
       <Menu />
 
       <div className="dashboard-right">
-        <div className="dashboard-high">
+        <div
+          className="dashboard-high"
+          onClick={() => window.location.assign("/bugs")}
+          style={{ cursor: "pointer" }}
+        >
           <p className="dashboard-high-p">Total High: {high.length}</p>
         </div>
 
-        <div className="dashboard-medium">
+        <div
+          className="dashboard-medium"
+          onClick={() => window.location.assign("/bugs")}
+          style={{ cursor: "pointer" }}
+        >
           <p className="dashboard-medium-p">Total Medium: {medium.length}</p>
         </div>
 
-        <div className="dashboard-low">
+        <div
+          className="dashboard-low"
+          onClick={() => window.location.assign("/bugs")}
+          style={{ cursor: "pointer" }}
+        >
           <p className="dashboard-low-p">Total Low: {low.length}</p>
         </div>
       </div>

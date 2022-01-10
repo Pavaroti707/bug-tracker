@@ -90,7 +90,6 @@ export default function CreateBug() {
             <input
               type="text"
               className="form-control"
-              id="exampleInputEmail1"
               onChange={(e) => setValues({ ...values, name: e.target.value })}
             />
           </div>
@@ -102,7 +101,6 @@ export default function CreateBug() {
             <input
               type="text"
               className="form-control"
-              id="exampleInputEmail1"
               onChange={(e) =>
                 setValues({ ...values, details: e.target.value })
               }
@@ -116,7 +114,6 @@ export default function CreateBug() {
             <input
               type="text"
               className="form-control"
-              id="exampleInputEmail1"
               onChange={(e) => setValues({ ...values, steps: e.target.value })}
             />
           </div>
@@ -129,7 +126,6 @@ export default function CreateBug() {
               type="search"
               list="prio"
               className="form-control"
-              id="exampleInputEmail1"
               onChange={(e) =>
                 setValues({ ...values, priority: e.target.value })
               }
@@ -149,7 +145,6 @@ export default function CreateBug() {
             <input
               type="text"
               className="form-control"
-              id="exampleInputEmail1"
               onChange={(e) =>
                 setValues({ ...values, version: e.target.value })
               }
@@ -164,7 +159,6 @@ export default function CreateBug() {
               type="search"
               list="users"
               className="form-control"
-              id="exampleInputEmail1"
               onChange={(e) =>
                 setValues({ ...values, assigned: e.target.value })
               }

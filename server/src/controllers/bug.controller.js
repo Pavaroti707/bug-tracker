@@ -16,11 +16,9 @@ const bugById = (req, res, next, id) => {
 };
 
 const create = async (req, res, next) => {
-  let id;
+  let bugs = await Bug.find();
 
-  await Bug.find((err, bugs) => {
-    id = bugs.length + 1;
-  });
+  let id = bugs.length + 1;
 
   const bug = new Bug({
     id: id,
@@ -53,7 +51,9 @@ const list = (req, res) => {
     }
     res.json(bugs);
   })
-    .select("_id id name details steps version priority assigned creator time completed")
+    .select(
+      "_id id name details steps version priority assigned creator time completed"
+    )
     .populate("assigned")
     .populate("creator");
 };

@@ -1,4 +1,4 @@
-/* eslint-disable */ 
+/* eslint-disable */
 
 import React, { useState, useEffect } from "react";
 import {
@@ -42,6 +42,7 @@ export default function EditBug({ bugId, close }) {
     });
 
     read({ bugId }).then((data) => {
+      console.log(data);
       if (data.error) {
         console.log(data.error);
       } else {
