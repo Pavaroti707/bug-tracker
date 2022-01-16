@@ -144,17 +144,21 @@ body {
 }
 
 .single-high {
-  width: 100px;
-  height: 100px;
   border: 1px solid black;
   color: #ee4b2b;
   text-align: center;
   background-color: #89cff0;
+  border-width: 25;
+  font-size: 1.5vw;
+}
+
+.single-title-h2 {
+  font-size: 0.5vw;
 }
 
 .single-medium {
-  width: 100px;
-  height: 100px;
+  border-width: 25;
+  font-size: 1.5vw;
   border: 1px solid black;
   color: #ffdf00;
   text-align: center;
@@ -162,16 +166,18 @@ body {
 }
 
 .single-low {
-  width: 100px;
-  height: 100px;
+  border-width: 25;
+
   border: 1px solid black;
   color: forestgreen;
   text-align: center;
   background-color: #89cff0;
+  font-size: 1.5vw;
 }
 
 .modal-content {
   margin-top: 15% !important;
+  margin-left: -25%;
 }
 
 .single-title {
@@ -209,10 +215,12 @@ body {
 }
 
 .modal-footer {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-evenly !important;
+  display: inline !important;
   background-color: #3df3ad;
+}
+
+.modal-footer > div > button {
+  margin-left: 25% !important;
 }
 
 .edit-title {
@@ -261,6 +269,18 @@ body {
 }
 .modal-body {
   background-color: #3df3ad;
+}
+
+.btn {
+  margin-left: 3%;
+}
+
+@media screen and (max-width: 757px) {
+  .modal-content {
+    width: 50vw !important;
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+  }
 }
 
 @media screen and (max-width: 425px) {

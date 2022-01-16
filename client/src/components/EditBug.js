@@ -220,7 +220,7 @@ export default function EditBug({ bugId, close }) {
             <Button
               variant="outline-success"
               onClick={editHandle}
-              style={{ marginRight: "2rem" }}
+              style={{ marginRight: "3rem" }}
             >
               Edit
             </Button>

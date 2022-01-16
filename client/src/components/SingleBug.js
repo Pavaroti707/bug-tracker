@@ -110,7 +110,7 @@ export default function SingleBug() {
 
       <Modal show={modal}>
         <ModalTitle>
-          <div className="single-title">
+          <div className="single-title" style={{ width: "150%", gap: "1rem" }}>
             <Button variant="outline-danger" onClick={openDelete}>
               Delete
             </Button>
@@ -126,7 +126,7 @@ export default function SingleBug() {
           </div>
         </ModalTitle>
 
-        <ModalBody>
+        <ModalBody style={{ width: "150%" }}>
           <div className="single-body">
             <div className="single-det">
               <p className="single-details">Details :</p>
@@ -196,7 +196,7 @@ export default function SingleBug() {
           </div>
         </ModalBody>
 
-        <ModalFooter>
+        <ModalFooter style={{ width: "150%" }}>
           <div className="single-button">
             <Button
               variant="secondary"
