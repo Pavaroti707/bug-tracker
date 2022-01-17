@@ -205,7 +205,11 @@ export default function SingleBug() {
             >
               Edit
             </Button>
-            <Button variant="success" onClick={markComplete}>
+            <Button
+              variant="success"
+              onClick={markComplete}
+              disabled={bug.completed}
+            >
               Mark Complete
             </Button>
           </div>

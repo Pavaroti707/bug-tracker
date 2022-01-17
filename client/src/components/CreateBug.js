@@ -43,12 +43,32 @@ export default function CreateBug() {
 
   const createHandle = (e) => {
     let id = "";
+    let counter = 0;
 
     users.map((v, i) => {
       if (v.name === values.assigned) {
         id = v._id;
+        counter++;
       }
     });
+
+    if (counter === 0) {
+      return setValues({
+        ...values,
+        error: "You have to chose assigne  from dropdown menu!!!",
+      });
+    }
+
+    if (
+      values.priority !== "high" &&
+      values.priority !== "medium" &&
+      values.priority !== "low"
+    ) {
+      return setValues({
+        ...values,
+        error: "You have to chose priority  from dropdown menu!!!",
+      });
+    }
 
     const newBug = {
       assigned: id || undefined,
