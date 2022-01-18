@@ -92,7 +92,7 @@ body {
 
 .dashboard-high {
   border: 1px solid black;
-  width: 120px;
+  width: 100px;
   height: 100px;
   font-size: 1.25rem;
   text-align: center;
@@ -107,7 +107,7 @@ body {
 
 .dashboard-medium {
   border: 1px solid black;
-  width: 120px;
+  width: 100px;
   height: 100px;
   font-size: 1.2rem;
   text-align: center;
@@ -122,7 +122,7 @@ body {
 
 .dashboard-low {
   border: 1px solid black;
-  width: 120px;
+  width: 100px;
   height: 100px;
   font-size: 1.25rem;
   text-align: center;
@@ -144,17 +144,13 @@ body {
 }
 
 .single-high {
+  width: 100px;
+  height: 100px;
   border: 1px solid black;
   color: #ee4b2b;
   text-align: center;
   background-color: #89cff0;
-  inline-size: 150px;
   overflow: hidden;
-  font-size: 1vw;
-  display: flex;
-  flex-direction: column;
-  height: 40%;
-  padding: 50px;
 }
 
 .single-title-h2 {
@@ -162,32 +158,23 @@ body {
 }
 
 .single-medium {
-  font-size: 1vw;
+  width: 100px;
+  height: 100px;
   border: 1px solid black;
   color: #ffdf00;
   text-align: center;
   background-color: #89cff0;
-  inline-size: 150px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  height: 40%;
 }
 
 .single-low {
-  font-size: 1vw;
+  width: 100px;
+  height: 100px;
   border: 1px solid black;
-  color: green;
+  color: forestgreen;
   text-align: center;
   background-color: #89cff0;
-  inline-size: 150px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  height: 40%;
-  margin-left: 103%;
 }
 
 .modal-content {
@@ -290,35 +277,9 @@ body {
   margin-left: 3%;
 }
 
-.single-high-title {
-  margin-bottom: 50%;
-  margin-top: -80%;
-  margin-left: -80%;
-  margin-right: -70%;
-}
-
-.single-high-v {
-  margin-top: -20px;
-  margin-left: -40%;
-}
-
-.single-medium-title {
-  margin-bottom: 50%;
-  margin-top: -80%;
-  margin-left: -80%;
-  margin-right: -70%;
-}
-.single-medium-v {
-  margin-top: -20px;
-  margin-left: -40%;
-}
-
 .single-low-title {
-  margin-bottom: 50%;
-  margin-top: -80%;
-  margin-left: -80%;
-  margin-right: -70%;
 }
+
 @media screen and (max-width: 757px) {
   .modal-content {
     width: 50vw !important;
